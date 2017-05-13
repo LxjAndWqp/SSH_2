@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">102030</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/user</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.search.autoregister_listeners">false</property>
+        <property name="hibernate.validator.apply_to_ddl">false</property>
+        <mapping class="com.bean.DataBean" />
+        <mapping class="com.bean.MenuBean" />
+        <mapping class="com.bean.NoticeBean" />
+        <mapping class="com.bean.RoleBean" />
+        <mapping class="com.bean.RoleMenuBean" />
+        <mapping class="com.bean.UserBean" />
+        <mapping class="com.bean.UserParamBean" />
+	    <mapping class="com.bean.UserRoleBean" />
+		<mapping class="com.bean.MailBean" />
+		<mapping class="com.bean.SurveyBean" />
+		<mapping class="com.bean.SurveyOptionsBean" />
+    </session-factory>
+</hibernate-configuration>
